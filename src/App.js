@@ -39,7 +39,7 @@ function App() {
       'valedictory': {
         type: 'details',
         title: 'Valedictory Ceremony',
-        time: '2:00 PM - 3:30 PM',
+        time: '10:00 AM - 12:00 PM',
         details: 'The grand finale of VigilantX 2025! Join us for the prize distribution ceremony, recognition of outstanding participants, and celebration of all achievements throughout the event.',
         rules: [
           'All participants must attend',
@@ -53,52 +53,42 @@ function App() {
         type: 'registration',
         title: 'CTF',
         time: '10:00 AM - 4:30 PM',
-        prize: 'Prize Pool: ₹6,000'
+        prize: 'Prize Pool Upto ₹4,000'
       },
       'seminar-docker': {
         type: 'registration',
         title: 'Seminar (Docker/Kubernetes)',
-        time: '10:30 AM - 1:30 PM'
+        time: '10:30 AM - 12:30 PM'
       },
       'paper-presentation': {
         type: 'registration',
         title: 'Idea Presentation',
         time: '1:30 PM - 3:30 PM',
-        prize: 'Prize Pool: ₹3,000'
-      },
-      'hacking-expo': {
-        type: 'registration',
-        title: 'Hacking Tools Expo',
-        time: '10:00 AM - 4:30 PM'
+        prize: 'Prize Pool: ₹1,500'
       },
       'bug-bounty': {
         type: 'registration',
         title: 'Bug Bounty',
         time: '10:00 AM - 12:30 PM',
-        prize: 'Prize Pool: ₹4,500'
+        prize: 'Prize Pool: ₹3,000'
       },
       'cyber-hunt': {
         type: 'registration',
         title: 'Cyber Hunt',
-        time: '2:00 PM - 4:30 PM',
-        prize: 'Prize Pool: ₹2,500'
-      },
-      'workshop': {
-        type: 'registration',
-        title: 'Workshop - Block Chain Technology',
-        time: '9:30 AM - 12:30 PM'
+        time: '1:30 PM - 4:00 PM',
+        prize: 'Prize Pool: ₹1,500'
       },
       'game-of-threats': {
         type: 'registration',
         title: 'Game of Threats',
         time: '10:00 AM - 3:00 PM',
-        prize: 'Prize Pool: ₹2,500'
+        prize: 'Prize Pool: ₹1,500'
       },
       'debugging-contest': {
         type: 'registration',
         title: 'Cyber Coding Contest',
-        time: '10:30 AM - 12:30 PM',
-        prize: 'Prize Pool: ₹4,500'
+        time: '1:30 PM - 4:30 PM',
+        prize: 'Prize Pool: ₹3,000'
       }
     };
 

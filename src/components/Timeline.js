@@ -74,7 +74,7 @@ const Timeline = () => {
           <div className="timeline-content">
             <h3 style={{color: '#0ff', marginBottom: '15px'}}>DAY 1 - Competitive Events Begin</h3>
             <p style={{color: '#f0f', fontWeight: 'bold'}}>October 22, 2025 | 10:00 AM - 4:30 PM</p>
-            <p>Non-Cyber CTF challenges and Paper Presentations kick off the competition along with Seminar on Docker/Kubernetes.</p>
+            <p>VigilantX will kick off with an exciting CTF, a seminar on Docker and Kubernetes, an Idea Presentation, and the much-awaited Cyber Coding Contest.</p>
           </div>
         </div>
         
@@ -82,17 +82,17 @@ const Timeline = () => {
           <div className="timeline-dot"></div>
           <div className="timeline-content">
             <h3 style={{color: '#0ff', marginBottom: '15px'}}>DAY 2 - Hacking & Security</h3>
-            <p style={{color: '#f0f', fontWeight: 'bold'}}>October 23, 2025 | 10:00 AM - 4:30 PM</p>
-            <p>Hacking Tools Expo, Cyber Hunt, Bug Bounty & Red Teaming competitions with live demonstrations and expert guidance.</p>
+            <p style={{color: '#f0f', fontWeight: 'bold'}}>October 23, 2025 | 10:00 AM - 4:00 PM</p>
+            <p>Participants will dive into engaging cybersecurity challenges including Game of Threats, Bug Bounty, and Cyber Hunt.</p>
           </div>
         </div>
         
         <div className="timeline-item" style={{animationDelay: '0.8s'}}>
           <div className="timeline-dot"></div>
           <div className="timeline-content">
-            <h3 style={{color: '#0ff', marginBottom: '15px'}}>DAY 3 - Workshops & Finals</h3>
-            <p style={{color: '#f0f', fontWeight: 'bold'}}>October 24, 2025 | 9:30 AM - 3:30 PM</p>
-            <p>Blockchain workshops, Game of Threats, Cyber Coding contests, and grand finale ceremony.</p>
+            <h3 style={{color: '#0ff', marginBottom: '15px'}}>DAY 3 - Valedictory and Prize Distribution</h3>
+            <p style={{color: '#f0f', fontWeight: 'bold'}}>October 24, 2025 | 10:00 AM - 12:00 PM</p>
+            <p>The event will conclude with the Valedictory and Prize Distribution ceremony, recognizing outstanding talent and participation.</p>
           </div>
         </div>
       </div>
