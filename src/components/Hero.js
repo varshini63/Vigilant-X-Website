@@ -164,7 +164,7 @@ const Hero = ({ onRegisterClick }) => {
         </div>
         <div className="hero-image">
           <div className="rotating-image scroll-controlled">
-            <img src="./images/main.jpg" alt="VigilantX Logo" />
+            <img src="./images/Final_VigilantX_Poster.png" alt="VigilantX Logo" />
           </div>
         </div>
       </div>
