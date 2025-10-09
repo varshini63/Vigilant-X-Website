@@ -9,7 +9,7 @@ const WhyParticipate = () => {
           
           <div className="h-card" data-index="1">
             <div className="h-card-icon">🏆</div>
-            <h3>Prize Pool ₹30,000+</h3>
+            <h3>Prize Pool ₹20,000+</h3>
             <p>Compete for exciting cash prizes</p>
           </div>
           <div className="h-card" data-index="2">
@@ -32,7 +32,7 @@ const WhyParticipate = () => {
   
           <div className="h-card" data-index="1">
             <div className="h-card-icon">🏆</div>
-            <h3>Prize Pool ₹30,000+</h3>
+            <h3>Prize Pool ₹20,000+</h3>
             <p>Compete for exciting cash prizes</p>
           </div>
           <div className="h-card" data-index="2">

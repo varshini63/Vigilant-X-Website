@@ -19,7 +19,7 @@ const Hero = ({ onRegisterClick }) => {
     { q: "$ cat /etc/vigilantx/mission.txt", a: "🎯 Securing the digital frontier, one byte at a time.\n🔐 Training tomorrow's cybersecurity warriors today." },
     { q: "$ ls -la /events/", a: "drwxr-xr-x CTF_Competition\ndrwxr-xr-x Bug_Bounty_Hunt\ndrwxr-xr-x Security_Workshops\ndrwxr-xr-x Cyber_Hunt_2025\ndrwxr-xr-x Game_of_Threats" },
     { q: "$ nmap -sV vigilantx.vnrvjiet.in", a: "PORT     STATE    SERVICE     VERSION\n22/tcp   open     ssh         OpenSSH 8.2\n80/tcp   open     http        nginx 1.18\n443/tcp  open     https       nginx 1.18\n1337/tcp open     elite       VigilantX-Portal" },
-    { q: "$ echo $PRIZE_POOL", a: "💰 Total Prize Pool: ₹30,000+\n🏆 Biggest cyber event in the region!" },
+    { q: "$ echo $PRIZE_POOL", a: "💰 Total Prize Pool: ₹20,000+\n🏆 Biggest cyber event in the region!" },
     { q: "$ date && uptime", a: "📅 October 17, 2025 | National Cyber Security Awareness Month\n⚡ System uptime: 365 days of vigilance" },
     { q: "$ ps aux | grep security", a: "vigilant  1337  0.1  cybersec  /usr/bin/defend-the-realm\ngaruda    2025  0.2  ethical   /opt/hack-for-good\nguardian  3000  0.3  monitor   /bin/watch-threats" },
     { q: "$ cat /proc/cpuinfo | grep 'model name'", a: "model name: VJ Garuda Vigilance Cyber Processor v2025\nFeatures: ethical_hacking penetration_testing ctf_mastery" }
@@ -160,11 +160,18 @@ const Hero = ({ onRegisterClick }) => {
           </div>
         </div>
         <div className="center-button">
-          <button className="cta-button" onClick={onRegisterClick}>REGISTER FOR PASS</button>
-        </div>
+  <button className="cta-button" onClick={onRegisterClick}>REGISTER FOR PASS</button>
+  <button className="cta-button events-button" onClick={() => {
+    const eventsSection = document.getElementById('events');
+    if (eventsSection) {
+      eventsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}>REGISTER FOR EVENTS</button>
+</div>
+        
         <div className="hero-image">
           <div className="rotating-image scroll-controlled">
-            <img src="./images/Final_VigilantX_Poster.png" alt="VigilantX Logo" />
+            <img src="./images/Modified_Final_Poster.png" alt="VigilantX Logo" />
           </div>
         </div>
       </div>

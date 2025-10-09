@@ -12,6 +12,7 @@ import Gallery from './components/Gallery';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
 import ParticleBackground from './components/ParticleBackground';
+import Sponsors from './components/Sponsors';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -108,11 +109,12 @@ function App() {
       <Navbar onRegisterClick={handleRegisterPass} />
       <Hero onRegisterClick={handleRegisterPass} />
       <About />
-      <WhyParticipate />
       <Timeline />
       <Events onShowEventDetails={handleShowEventDetails} />
+      <WhyParticipate />
       <Coordinators />
       <Contact />
+      <Sponsors />
       <Footer />
       
       <Modal

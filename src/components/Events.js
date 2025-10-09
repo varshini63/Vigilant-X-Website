@@ -15,7 +15,7 @@ const Events = ({ onShowEventDetails }) => {
         
         <div className="event-card" onClick={() => onShowEventDetails('non-cyber-ctf')}>
           <span className="event-day">Day 1</span>
-          <h3 className="event-title">CTF</h3>
+          <h3 className="event-title">Flag-X CTF (Capture the flag)</h3>
           <p className="event-time">10:00 AM - 4:30 PM</p>
           <p className="event-prize">Prize Pool Upto ₹4,000</p>
           <p className="event-description">Brain-teasing logic puzzles, mathematical challenges, and creative problem-solving riddles</p>
