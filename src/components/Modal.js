@@ -86,26 +86,7 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       <p>🎯 Vaishnavi - 9108134359<br/>🎯 Chakri - 7671097946</p>`,
       description: 'Present your innovative research on cutting-edge technologies. Share your insights with industry experts and fellow enthusiasts.'
     },
-    'hacking-expo': {
-      title: '🔧 Hacking Tools Expo',
-      image: './images/hacking-expo.jpg',
-      hasRegistration: false,
-      comingSoon: true,
-      details: `
-      <h4>🛠️ Tools Showcase:</h4>
-      <ul style="text-align: left; margin: 20px 0;">
-      <li>🔍 Penetration Testing Tools</li>
-      <li>🛡️ Network Security Scanners</li>
-      <li>🕵️ Digital Forensics Software</li>
-      <li>⚡ Exploit Development Frameworks</li>
-      <li>🔐 Cryptography Tools</li>
-      </ul>
-      <h4>⏰ Schedule:</h4>
-      <p>📅 October 24, 2025<br/>🕙 10:00 AM - 4:30 PM<br/>📍 Tech Lab, VNR VJIET</p>
-      <h4>👥 Student Coordinators:</h4>
-      <p>🎯 Ch. Sushanth - 9441570117<br/>🎯 Harsha - 8019252777</p>`,
-      description: 'Discover the latest in cybersecurity tools and techniques through live demonstrations by security experts. Get hands-on experience with professional-grade tools.'
-    },
+    
     'bug-bounty': {
       title: '🐛 Bug Bounty',
       image: './images/bug-bounty.jpg',
@@ -194,25 +175,23 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
     },
     'debugging-contest': {
       title: '🐞 Cyber Coding Contest',
-      image: './images/debugging-contest.jpg',
-      hasRegistration: false,
-      comingSoon: true,
+      image: './images/debugging-contest.png',
+      hasRegistration: true,
+      registrationUrl: 'https://forms.gle/Kw8xbAWyByEXLz3f9',
       details: `
       <h4>💻 Programming Languages:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🐍 Python Security Scripts</li>
-      <li>☕ Java Applications</li>
-      <li>🌐 JavaScript/Node.js</li>
-      <li>⚡ C/C++ System Code</li>
-      <li>🔒 Security-sensitive Applications</li>
+      <li>🐍 Python</li>
+      <li>☕ Java</li>
+      <li>⚡ C/C++</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 October 25, 2025<br/>🕙 10:30 AM - 12:30 PM<br/>📍 Programming Lab, VNR VJIET</p>
+      <p>📅 October 22, 2025<br/>🕙 1:30 PM - 04:30 PM<br/>📍VNR VJIET</p>
       <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹4,500<br/>👥 Winners - 3 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,500<br/>🥉 3rd Prize: ₹1,000</p>
+      <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Tilak - 9182567516<br/>🎯 Akshith - 9603839570</p>`,
-      description: 'Identify and fix critical bugs in security-sensitive code with time-pressure challenges. Test your debugging skills under pressure.'
+      description: 'A high-paced contest where participants solve real-world problems through logic, creativity, and clean code.'
     }
   };
 

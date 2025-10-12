@@ -25,7 +25,6 @@ const Hero = ({ onRegisterClick }) => {
     { q: "$ cat /proc/cpuinfo | grep 'model name'", a: "model name: VJ Garuda Vigilance Cyber Processor v2025\nFeatures: ethical_hacking penetration_testing ctf_mastery" }
   ];
 
-  // Countdown timer logic
   useEffect(() => {
     const targetDate = new Date('2025-10-22T09:30:00').getTime();
 
@@ -46,7 +45,6 @@ const Hero = ({ onRegisterClick }) => {
           seconds: String(seconds).padStart(2, '0')
         });
       } else {
-        // Event has started or passed
         setCountdown({
           days: '00',
           hours: '00',
@@ -56,10 +54,8 @@ const Hero = ({ onRegisterClick }) => {
       }
     };
 
-    // Update immediately
     updateCountdown();
 
-    // Update every second
     const countdownInterval = setInterval(updateCountdown, 1000);
 
     return () => clearInterval(countdownInterval);
@@ -104,7 +100,12 @@ const Hero = ({ onRegisterClick }) => {
   return (
     <section id="home" className="hero">
       <div className="matrix-bg"></div>
-      <h1 className="glitch-title">VigilantX 2025</h1>
+      <div className="title-with-logo">
+        <div className="main-event-logo">
+          <img src="./images/vigilantx-logo.png" alt="VigilantX Main Logo" />
+        </div>
+        <h1 className="glitch-title">VigilantX 2025</h1>
+      </div>
       <div className="hero-top-section">
         <div className="countdown-container">
           <div className="countdown-timer">
@@ -160,14 +161,14 @@ const Hero = ({ onRegisterClick }) => {
           </div>
         </div>
         <div className="center-button">
-  <button className="cta-button" onClick={onRegisterClick}>REGISTER FOR PASS</button>
-  <button className="cta-button events-button" onClick={() => {
-    const eventsSection = document.getElementById('events');
-    if (eventsSection) {
-      eventsSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  }}>REGISTER FOR EVENTS</button>
-</div>
+          <button className="cta-button" onClick={onRegisterClick}>REGISTER FOR PASS</button>
+          <button className="cta-button events-button" onClick={() => {
+            const eventsSection = document.getElementById('events');
+            if (eventsSection) {
+              eventsSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}>REGISTER FOR EVENTS</button>
+        </div>
         
         <div className="hero-image">
           <div className="rotating-image scroll-controlled">
