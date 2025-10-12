@@ -1876,6 +1876,7 @@ animation-play-state:running;
         order: -1;
         margin: 15px 0;
         gap: 12px;
+        transform: translateX(0)
     }
     
     .terminal {
