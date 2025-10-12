@@ -413,6 +413,10 @@ filter:brightness(1.2) contrast(1.1);
   .glitch-title {
     order: 1;
   }
+
+  .center-button {
+    transform: translateX(0);
+  }
 }
 .about-content{
 background:rgba(0,255,255,0.05);
