@@ -25,7 +25,7 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       ]
     },
     'non-cyber-ctf': {
-      title: '🧩 CTF Challenge',
+      title: '🧩 Flag-X CTF ',
       image: './images/non-cyber-ctf.png',
       hasRegistration: true,
       registrationUrl: 'https://forms.gle/dNX7HCj6HiFGSAFj7',
