@@ -20,7 +20,7 @@ function App() {
   const [selectedEvent, setSelectedEvent] = useState(null);
 
   const handleRegisterPass = () => {
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSducDXZbLt3QRDdxCpgloApmTsnYhWjLxva8YC3XvaxmoKU1Q/viewform?pli=1', '_blank', 'width=800,height=600');
+    window.open('https://forms.gle/Xp38fLBp5jxPX8k9A', '_blank', 'width=800,height=600');
   };
 
   const handleRegisterEvent = () => {
