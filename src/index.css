@@ -201,8 +201,8 @@ filter:brightness(1.2) contrast(1.1);
 .cta-button {
     background: linear-gradient(45deg, #0ff, #f0f);
     color: #000;
-    padding: 15px 40px;
-    font-size: 1.2rem;
+    padding: 12px 30px;
+    font-size: 1rem;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -778,8 +778,25 @@ animation:borderRotate 4s linear infinite;
 .event-time{color:#0ff;margin:8px 0;font-size:1.1rem}
 .event-prize{background:linear-gradient(45deg,#f0f,#00f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-weight:bold;font-size:1.3rem;margin:15px 0}
 .event-description{color:#ccc;margin:15px 0;line-height:1.6}
-.event-register{background:linear-gradient(45deg,#0ff,#f0f);color:#000;padding:12px 25px;border:none;border-radius:25px;cursor:pointer;font-weight:bold;transition:all 0.3s;margin-top:15px;text-transform:uppercase}
-.event-register:hover{background:linear-gradient(45deg,#f0f,#0ff);transform:scale(1.1);box-shadow:0 0 20px rgba(0,255,255,0.8)}
+.event-register{
+    background:linear-gradient(45deg,#0ff,#f0f);
+    color:#000;
+    padding:10px 20px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:all 0.3s;
+    margin-top:15px;
+    text-transform:uppercase;
+    font-size:0.9rem;
+}
+
+.event-register:hover{
+    background:linear-gradient(45deg,#f0f,#0ff);
+    transform:scale(1.05);
+    box-shadow:0 0 20px rgba(0,255,255,0.8);
+}
 
 .cyber-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin:60px 0}
 .feature-box{background:rgba(0,255,255,0.05);border:1px solid #0ff;border-radius:15px;padding:40px;text-align:center;position:relative;overflow:hidden;transition:all 0.3s;transform-style:preserve-3d}
@@ -1386,7 +1403,8 @@ animation-play-state:running;
 .sponsors-grid {
   display: flex;
   justify-content: center;
-  gap: 0;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .sponsor-card {
@@ -1399,7 +1417,7 @@ animation-play-state:running;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 30px;
   overflow: visible;
   box-shadow: 0 8px 40px rgba(0,0,0,0.4);
@@ -1442,7 +1460,6 @@ animation-play-state:running;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 25px;
 }
 
 .sponsor-logo {
@@ -1461,8 +1478,9 @@ animation-play-state:running;
 }
 
 .silver-sponsor-card .sponsor-logo {
+  max-width: 50%;
+  max-height: 50%;
   filter: drop-shadow(0 5px 15px rgba(192,192,192,0.4));
-  margin-bottom: 15px;
 }
 
 .sponsor-card:hover .sponsor-logo {
@@ -1483,6 +1501,10 @@ animation-play-state:running;
   transition: all 0.3s ease;
   z-index: 4;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .sponsor-name {
@@ -1491,8 +1513,8 @@ animation-play-state:running;
   text-shadow: 0 2px 10px rgba(255,255,255,0.3);
   font-weight: bold;
   letter-spacing: 1.5px;
-  margin-bottom: 10px;
   transition: all 0.3s ease;
+  margin: 0;
 }
 
 .sponsor-card:hover .sponsor-name {
@@ -1509,6 +1531,7 @@ animation-play-state:running;
   border-radius: 50px;
   display: inline-block;
   transition: all 0.3s ease;
+  margin: 0;
 }
 
 .gold-sponsor-card .sponsor-badge {
@@ -1535,10 +1558,13 @@ animation-play-state:running;
   box-shadow: 0 6px 25px rgba(192,192,192,0.7);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .sponsors-container {
     gap: 80px;
+  }
+
+  .sponsors-grid {
+    gap: 30px;
   }
 
   .sponsor-card {
@@ -1570,6 +1596,10 @@ animation-play-state:running;
     width: 100%;
   }
 
+  .sponsors-grid {
+    gap: 30px;
+  }
+
   .sponsor-category-title {
     font-size: 1.7rem;
     margin-bottom: 35px;
@@ -1598,6 +1628,10 @@ animation-play-state:running;
 
   .sponsors-container {
     gap: 60px;
+  }
+
+  .sponsors-grid {
+    gap: 25px;
   }
 
   .sponsor-category-title {
@@ -1734,8 +1768,12 @@ animation-play-state:running;
     }
     
     .cta-button {
-        padding: 12px 30px;
-        font-size: 1rem;
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+    .event-register {
+        padding: 8px 18px;
+        font-size: 0.85rem;
     }
     
     /* Mobile Hero Content */

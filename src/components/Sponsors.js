@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 
 function Sponsors() {
   const sponsorsRef = useRef(null);
@@ -37,6 +37,11 @@ function Sponsors() {
       name: 'Lickees',
       logo: './images/Lickees_logo.jpg',
       category: 'Silver'
+    },
+    {
+      name: 'BWF',
+      logo: './images/bwf_logo_1.jpg',
+      category: 'Silver'
     }
   ];
 
@@ -47,19 +52,15 @@ function Sponsors() {
       <div className="sponsors-container">
         <div className="sponsor-category">
           <h3 className="sponsor-category-title gold-title">Gold Sponsor</h3>
-          <div className="sponsors-grid gold-grid">
+          <div className="sponsors-grid">
             {goldSponsors.map((sponsor, index) => (
               <div key={index} className="sponsor-card gold-sponsor-card">
-                <div className="sponsor-card-inner">
-                  <div className="sponsor-front">
-                    <div className="sponsor-logo-container">
-                      <img src={sponsor.logo} alt={sponsor.name} className="sponsor-logo" />
-                    </div>
-                  </div>
-                  <div className="sponsor-back">
-                    <h4 className="sponsor-name">{sponsor.name}</h4>
-                    <p className="sponsor-badge">{sponsor.category}</p>
-                  </div>
+                <div className="sponsor-logo-container">
+                  <img src={sponsor.logo} alt={sponsor.name} className="sponsor-logo" />
+                </div>
+                <div className="sponsor-info">
+                  <h4 className="sponsor-name">{sponsor.name}</h4>
+                  <p className="sponsor-badge">{sponsor.category} Sponsor</p>
                 </div>
               </div>
             ))}
@@ -67,20 +68,16 @@ function Sponsors() {
         </div>
 
         <div className="sponsor-category">
-          <h3 className="sponsor-category-title silver-title">Silver Sponsor</h3>
-          <div className="sponsors-grid silver-grid">
+          <h3 className="sponsor-category-title silver-title">Silver Sponsors</h3>
+          <div className="sponsors-grid">
             {silverSponsors.map((sponsor, index) => (
               <div key={index} className="sponsor-card silver-sponsor-card">
-                <div className="sponsor-card-inner">
-                  <div className="sponsor-front">
-                    <div className="sponsor-logo-container">
-                      <img src={sponsor.logo} alt={sponsor.name} className="sponsor-logo" />
-                    </div>
-                  </div>
-                  <div className="sponsor-back">
-                    <h4 className="sponsor-name">{sponsor.name}</h4>
-                    <p className="sponsor-badge">{sponsor.category}</p>
-                  </div>
+                <div className="sponsor-logo-container">
+                  <img src={sponsor.logo} alt={sponsor.name} className="sponsor-logo" />
+                </div>
+                <div className="sponsor-info">
+                  <h4 className="sponsor-name">{sponsor.name}</h4>
+                  <p className="sponsor-badge">{sponsor.category} Sponsor</p>
                 </div>
               </div>
             ))}
