@@ -51,7 +51,6 @@ function App() {
       <Events onShowEventDetails={handleShowEventDetails} />
       <Coordinators />
       <Contact />
-      <Gallery />
       <Sponsors />
       <Footer />
       
