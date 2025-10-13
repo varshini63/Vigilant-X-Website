@@ -25,28 +25,36 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       ]
     },
     'non-cyber-ctf': {
-      title: '🧩 Flag-X CTF ',
-      image: './images/non-cyber-ctf.png',
-      hasRegistration: true,
-      registrationUrl: 'https://forms.gle/dNX7HCj6HiFGSAFj7',
-      details: `
-      <h4>🎯 Challenge Categories:</h4>
-      <ul style="text-align: left; margin: 20px 0;">
-      <li>🔐 Cryptography</li>
-      <li>🛡️ Web Security</li>
-      <li>🔎 Forensics</li>
-      <li>🖼️ Steganography</li>
-      <li>🔧 Reverse Engineering</li>
-      <li>🐛 Binary exploits</li>
-      </ul>
-      <h4>⏰ Schedule:</h4>
-      <p>📅 October 22, 2025<br/>🕙 10:00 AM - 4:30 PM<br/>📍VNR VJIET Campus</p>
-      <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool Upto ₹4,000<br/></p>
-      <h4>👥 Student Coordinators:</h4>
-      <p>🎯 Raghava - 9059494181<br/>🎯 Praneeth - 9550722677</p>`,
-      description: 'Test your analytical and creative thinking skills with brain-teasing logic puzzles, mathematical challenges, and innovative problem-solving scenarios.'
-    },
+  title: '🧩 Flag-X CTF ',
+  image: './images/non-cyber-ctf.png',
+  hasRegistration: true,
+  registrationUrl: 'https://forms.gle/dNX7HCj6HiFGSAFj7',
+  details: `
+  <h4>🎯 Challenge Categories:</h4>
+  <ul style="text-align: left; margin: 20px 0;">
+  <li>🔐 Cryptography</li>
+  <li>🛡️ Web Security</li>
+  <li>🔎 Forensics</li>
+  <li>🖼️ Steganography</li>
+  <li>🔧 Reverse Engineering</li>
+  <li>🐛 Binary exploits</li>
+  </ul>
+  <h4>🔐 Rules:</h4>
+  <ul style="text-align: left; margin: 20px 0;">
+  <li>👥 Teams of 2–3 | Inter-college Teams Allowed</li>
+  <li>❌ No DoS / Brute Force / External Help</li>
+  <li>⚖ Organizer's decision is final</li>
+  </ul>
+  <h4>⏰ Schedule:</h4>
+  <p>📅 October 22, 2025<br/>🕙 10:00 AM - 4:30 PM<br/>📍VNR VJIET Campus</p><br/>
+  <h4>🏆 Prize Pool:</h4>
+  <p>💰 Total Prize Pool Upto ₹4,000<br/></p><br/>
+  
+  <h4>👥 Student Coordinators:</h4>
+  <p>🎯 Raghava - 9059494181<br/>🎯 Praneeth - 9550722677</p>`,
+  description: '⚡ Jeopardy-style format  | Climb the leaderboard & prove your hacking skills!'
+},
+
     'seminar-docker': {
       title: '🐳 Docker/Kubernetes Seminar',
       image: './images/docker-seminar.jpg',
@@ -174,25 +182,32 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       description: 'Strategic cybersecurity simulation game with real-world threat scenarios and defense strategies. Test your incident response skills.'
     },
     'debugging-contest': {
-      title: '🐞 Cyber Coding Contest',
-      image: './images/debugging-contest.png',
-      hasRegistration: true,
-      registrationUrl: 'https://forms.gle/Kw8xbAWyByEXLz3f9',
-      details: `
-      <h4>💻 Programming Languages:</h4>
-      <ul style="text-align: left; margin: 20px 0;">
-      <li>🐍 Python</li>
-      <li>☕ Java</li>
-      <li>⚡ C/C++</li>
-      </ul>
-      <h4>⏰ Schedule:</h4>
-      <p>📅 October 22, 2025<br/>🕙 1:30 PM - 04:30 PM<br/>📍VNR VJIET</p>
-      <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p>
-      <h4>👥 Student Coordinators:</h4>
-      <p>🎯 Tilak - 9182567516<br/>🎯 Akshith - 9603839570</p>`,
-      description: 'A high-paced contest where participants solve real-world problems through logic, creativity, and clean code.'
-    }
+  title: '🐞 Cyber Coding Contest',
+  image: './images/debugging-contest.png',
+  hasRegistration: true,
+  registrationUrl: 'https://forms.gle/Kw8xbAWyByEXLz3f9',
+  details: `
+  <h4>💻 Programming Languages:</h4>
+  <ul style="text-align: left; margin: 20px 0;">
+  <li>🐍 Python</li>
+  <li>☕ Java</li>
+  <li>⚡ C/C++</li>
+  </ul>
+  <h4>⚠ Rules:</h4>
+  <ul style="text-align: left; margin: 20px 0;">
+  <li>💻 Bring your own laptop & essentials</li>
+  <li>🚫 Strict no plagiarism</li>
+  <li>⚖ Judge's decision is final</li>
+  </ul>
+  <h4>⏰ Schedule:</h4>
+  <p>📅 October 22, 2025<br/>🕙 1:30 PM - 04:30 PM<br/>📍VNR VJIET</p><br/>
+  <h4>🏆 Prize Pool:</h4>
+  <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p><br/>
+  
+  <h4>👥 Student Coordinators:</h4>
+  <p>🎯 Tilak - 9182567516<br/>🎯 Akshith - 9603839570</p>`,
+  description: '🔸 Solve coding problems, debug tricky code & crack algorithmic puzzles of all levels!'
+}
   };
 
   const handleEventRegistration = () => {
