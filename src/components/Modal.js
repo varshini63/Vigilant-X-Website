@@ -25,97 +25,106 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       ]
     },
     'non-cyber-ctf': {
-  title: '🧩 Flag-X CTF ',
-  image: './images/non-cyber-ctf.png',
-  hasRegistration: true,
-  registrationUrl: 'https://forms.gle/dNX7HCj6HiFGSAFj7',
-  details: `
-  <h4>🎯 Challenge Categories:</h4>
-  <ul style="text-align: left; margin: 20px 0;">
-  <li>🔐 Cryptography</li>
-  <li>🛡️ Web Security</li>
-  <li>🔎 Forensics</li>
-  <li>🖼️ Steganography</li>
-  <li>🔧 Reverse Engineering</li>
-  <li>🐛 Binary exploits</li>
-  </ul>
-  <h4>🔐 Rules:</h4>
-  <ul style="text-align: left; margin: 20px 0;">
-  <li>👥 Teams of 2–3 | Inter-college Teams Allowed</li>
-  <li>❌ No DoS / Brute Force / External Help</li>
-  <li>⚖ Organizer's decision is final</li>
-  </ul>
-  <h4>⏰ Schedule:</h4>
-  <p>📅 October 22, 2025<br/>🕙 10:00 AM - 4:30 PM<br/>📍VNR VJIET Campus</p><br/>
-  <h4>🏆 Prize Pool:</h4>
-  <p>💰 Total Prize Pool Upto ₹4,000<br/></p><br/>
-  
-  <h4>👥 Student Coordinators:</h4>
-  <p>🎯 Raghava - 9059494181<br/>🎯 Praneeth - 9550722677</p>`,
-  description: '⚡ Jeopardy-style format  | Climb the leaderboard & prove your hacking skills!'
-},
-
-    'seminar-docker': {
-      title: '🐳 Docker/Kubernetes Seminar',
-      image: './images/docker-seminar.jpg',
-      hasRegistration: false,
-      comingSoon: true,
+      title: '🧩 Flag-X CTF ',
+      image: './images/non-cyber-ctf.png',
+      hasRegistration: true,
+      registrationUrl: 'https://forms.gle/dNX7HCj6HiFGSAFj7',
       details: `
-      <h4>📚 Seminar by Raghavendra Sai(4th CYS):</h4>
+      <h4>🎯 Challenge Categories:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🐳 Docker Fundamentals & Best Practices</li>
-      <li>☸️ Kubernetes Architecture & Deployment</li>
-      <li>🔒 Container Security Strategies</li>
-      <li>🛠️ DevOps Integration & CI/CD</li>
-      <li>📊 Monitoring & Scaling Solutions</li>
+      <li>🔐 Cryptography</li>
+      <li>🛡️ Web Security</li>
+      <li>🔎 Forensics</li>
+      <li>🖼️ Steganography</li>
+      <li>🔧 Reverse Engineering</li>
+      <li>🐛 Binary exploits</li>
+      </ul>
+      <h4>🔐 Rules:</h4>
+      <ul style="text-align: left; margin: 20px 0;">
+      <li>👥 Teams of 2–3 | Inter-college Teams Allowed</li>
+      <li>❌ No DoS / Brute Force / External Help</li>
+      <li>⚖ Organizer's decision is final</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 October 23, 2025<br/>🕙 10:30 AM - 1:30 PM<br/>📍 Seminar Hall, VNR VJIET</p>
-  
+      <p>📅 October 22, 2025<br/>🕙 10:00 AM - 4:30 PM<br/>📍VNR VJIET Campus</p><br/>
+      <h4>🏆 Prize Pool:</h4>
+      <p>💰 Total Prize Pool Upto ₹4,000<br/></p><br/>
+      
+      <h4>👥 Student Coordinators:</h4>
+      <p>🎯 Raghava - 9059494181<br/>🎯 Praneeth - 9550722677</p>`,
+      description: '⚡ Jeopardy-style format  | Climb the leaderboard & prove your hacking skills!'
+    },
+    'seminar-docker': {
+      title: '🐳 Docker/Kubernetes Seminar',
+      hasRegistration: false,
+      comingSoon: false,
+      details: `
+      <h4>📚 Instructions:</h4>
+      <ul style="text-align: left; margin: 20px 0;">
+      <li>💻 Bring your laptop (if practical)</li>
+      <li>🪪 Carry your college ID card</li>
+      <li>🐳 Install Docker Desktop (if possible)</li>
+      <li>⏰ Be seated 10 mins before the seminar starts</li>
+      </ul>
+      <h4>⏰ Schedule:</h4>
+      <p>📅 22 Oct 2025<br/>🕙 10:30 AM – 1:30 PM<br/>📍 College Auditorium</p><p>🌐 Mode: Offline (with Live Demo)<p/><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Yeshaswini - 9908613869<br/>🎯 Hemalatha - 9059623204<br/>🎯 Chandra Shekar - 8328202404</p>`,
-      description: 'Comprehensive seminar on containerization technologies with Docker and Kubernetes orchestration. Learn from industry experts about modern DevOps practices.'
+      description: 'Step into the world of containerization & orchestration with an exciting, beginner-friendly session! 🚀<br/>Whether you are new to DevOps or have some experience, this seminar will help you grasp the fundamentals in a simple, interactive way '
     },
     'paper-presentation': {
       title: '📝 Idea Presentation',
-      image: './images/paper-presentation.jpg',
-      hasRegistration: false,
-      comingSoon: true,
+      image: './images/paper-presentation.png',
+      hasRegistration: true,
+      registrationUrl: 'https://forms.gle/121g5busnEoydJ5w5',
       details: `
       <h4>📚 Presentation Topics:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🤖 Any topic of your choice</li>
+      <li>🤖 Any domain of your choice</li>
+      </ul>
+      <h4>🔐 Rules:</h4>
+      <ul style="text-align: left; margin: 20px 0;">
+      <li>Teams of up to 3 members. Inter-college teams are welcome! 👥</li>
+      <li>Bring your PPT/PDF & laptop if needed 💻</li>
+      <li>5–7 mins presentation + Q&A 🗣</li>
+      <li>Original ideas only — no plagiarism 🚫</li>
+      <li>Judges' decision is final ⚖</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 October 23, 2025<br/>🕐 1:30 PM - 3:30 PM<br/>📍 Conference Hall, VNR VJIET</p>
+      <p>📅 22 Oct 2025<br/>🕐 10:00 AM – 1:00 PM<br/>📍VNR VJIET</p><br/>
       <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners - 3 Teams<br/>🥇 1st Prize: ₹1,500<br/>🥈 2nd Prize: ₹1,000<br/>🥉 3rd Prize: ₹500</p>
+      <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500<br/></p><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Vaishnavi - 9108134359<br/>🎯 Chakri - 7671097946</p>`,
-      description: 'Present your innovative research on cutting-edge technologies. Share your insights with industry experts and fellow enthusiasts.'
+      description: 'Showcase your creativity, innovation & problem-solving skills! Form your team, present impactful ideas, and impress the judges to win exciting prizes 🏆'
     },
-    
     'bug-bounty': {
       title: '🐛 Bug Bounty',
       image: './images/bug-bounty.jpg',
-      hasRegistration: false,
-      comingSoon: true,
+      hasRegistration: true,
+      registrationUrl: 'https://forms.gle/d2yYRPP8Eh3SkyXt6',
       details: `
       <h4>🎯 Target Applications:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🌐 Web Applications</li>
-      <li>📱 Mobile Applications</li>
-      <li>🖥️ Desktop Software</li>
-      <li>🔗 API Endpoints</li>
-      <li>🛡️ Security Configurations</li>
+      <li>🔸Web Exploitation</li>
+      <li>🔸Penetration Testing</li>
+      <li>🔸Proof-of-Concept Reporting</li>
+      </ul>
+      <h4>🔐 Rules:</h4>
+      <ul style="text-align: left; margin: 20px 0;">
+      <li>Teams of 2–3 | Inter-college Teams Allowed 👥</li>
+      <li>Only provided targets are in-scope ✅</li>
+      <li>No attacks on external infrastructure ❌</li>
+      <li>Quality findings and early submissions score higher 🧩</li>
+      <li>Organizer's decision is final ⚖</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 October 24, 2025<br/>🕙 10:00 AM - 12:30 PM<br/>📍 Cyber Lab, VNR VJIET</p>
+      <p>📅 23 Oct 2025<br/>🕙 10:00 AM - 12:30 PM<br/>📍 Cyber Lab, VNR VJIET</p><br/>
       <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹4,500<br/>👥 Winners - 3 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,500<br/>🥉 3rd Prize: ₹1,000</p>
+      <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Sushanth - 8919652145<br/>🎯 Lalith - 8500283828</p>`,
-      description: 'Discover vulnerabilities, exploit systems ethically, and demonstrate advanced red team methodologies in a controlled environment.'
+      description: 'Step into the world of ethical hacking and prove your offensive security skills!Hunt for real vulnerabilities, report them, and earn bounties across severity tiers.'
     },
     'cyber-hunt': {
       title: '🕵️ Cyber Hunt Challenge',
@@ -182,32 +191,32 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       description: 'Strategic cybersecurity simulation game with real-world threat scenarios and defense strategies. Test your incident response skills.'
     },
     'debugging-contest': {
-  title: '🐞 Cyber Coding Contest',
-  image: './images/debugging-contest.png',
-  hasRegistration: true,
-  registrationUrl: 'https://forms.gle/Kw8xbAWyByEXLz3f9',
-  details: `
-  <h4>💻 Programming Languages:</h4>
-  <ul style="text-align: left; margin: 20px 0;">
-  <li>🐍 Python</li>
-  <li>☕ Java</li>
-  <li>⚡ C/C++</li>
-  </ul>
-  <h4>⚠ Rules:</h4>
-  <ul style="text-align: left; margin: 20px 0;">
-  <li>💻 Bring your own laptop & essentials</li>
-  <li>🚫 Strict no plagiarism</li>
-  <li>⚖ Judge's decision is final</li>
-  </ul>
-  <h4>⏰ Schedule:</h4>
-  <p>📅 October 22, 2025<br/>🕙 1:30 PM - 04:30 PM<br/>📍VNR VJIET</p><br/>
-  <h4>🏆 Prize Pool:</h4>
-  <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p><br/>
-  
-  <h4>👥 Student Coordinators:</h4>
-  <p>🎯 Tilak - 9182567516<br/>🎯 Akshith - 9603839570</p>`,
-  description: '🔸 Solve coding problems, debug tricky code & crack algorithmic puzzles of all levels!'
-}
+      title: '🐞 Cyber Coding Contest',
+      image: './images/debugging-contest.png',
+      hasRegistration: true,
+      registrationUrl: 'https://forms.gle/Kw8xbAWyByEXLz3f9',
+      details: `
+      <h4>💻 Programming Languages:</h4>
+      <ul style="text-align: left; margin: 20px 0;">
+      <li>🐍 Python</li>
+      <li>☕ Java</li>
+      <li>⚡ C/C++</li>
+      </ul>
+      <h4>⚠ Rules:</h4>
+      <ul style="text-align: left; margin: 20px 0;">
+      <li>💻 Bring your own laptop & essentials</li>
+      <li>🚫 Strict no plagiarism</li>
+      <li>⚖ Judge's decision is final</li>
+      </ul>
+      <h4>⏰ Schedule:</h4>
+      <p>📅 October 22, 2025<br/>🕙 1:30 PM - 04:30 PM<br/>📍VNR VJIET</p><br/>
+      <h4>🏆 Prize Pool:</h4>
+      <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p><br/>
+      
+      <h4>👥 Student Coordinators:</h4>
+      <p>🎯 Tilak - 9182567516<br/>🎯 Akshith - 9603839570</p>`,
+      description: '🔸 Solve coding problems, debug tricky code & crack algorithmic puzzles of all levels!'
+    }
   };
 
   const handleEventRegistration = () => {
@@ -297,12 +306,16 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
         <div className="modal-content" style={{ maxWidth: '800px' }}>
           <button className="close-btn" onClick={onClose}>&times;</button>
           <h2 style={{ color: '#0ff', marginBottom: '20px' }}>{event.title}</h2>
-          <div style={{ textAlign: 'center', margin: '20px 0' }}>
-            <img src={event.image} alt={event.title} style={{ width: '100%', maxWidth: '400px', objectFit: 'contain', borderRadius: '15px', border: '2px solid #0ff', boxShadow: '0 0 20px rgba(0,255,255,0.3)' }} />
-          </div>
+          
+          {event.image && (
+            <div style={{ textAlign: 'center', margin: '20px 0' }}>
+              <img src={event.image} alt={event.title} style={{ width: '100%', maxWidth: '400px', objectFit: 'contain', borderRadius: '15px', border: '2px solid #0ff', boxShadow: '0 0 20px rgba(0,255,255,0.3)' }} />
+            </div>
+          )}
+          
           <div style={{ color: '#fff', lineHeight: '1.6' }} dangerouslySetInnerHTML={{ __html: event.details }} />
           <h4 style={{ color: '#f0f', margin: '20px 0 10px 0' }}>📝 Event Description:</h4>
-          <p style={{ marginBottom: '20px' }}>{event.description}</p>
+          <p style={{ marginBottom: '20px' }} dangerouslySetInnerHTML={{ __html: event.description }} />
           <div style={{ textAlign: 'center', marginTop: '30px' }}>
             {event.hasRegistration && (
               <button className="cta-button" onClick={handleEventRegistration} style={{ marginTop: '20px' }}>REGISTER FOR EVENT</button>
