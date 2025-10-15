@@ -128,7 +128,7 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
     },
     'cyber-hunt': {
       title: '🕵️ Cyber Hunt Challenge',
-      image: './images/cyber-hunt.jpg',
+      image: './images/cyber-hunt.png',
       hasRegistration: true,
       registrationUrl: 'https://forms.gle/ZppFELgyLMsczfi49',
       details: `
@@ -138,7 +138,6 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       <li>🔐 Cryptographic Puzzles</li>
       <li>🌐 Web-based Clues</li>
       <li>📱 Digital Footprint Analysis</li>
-      <li>🗺️ Virtual Treasure Hunt</li>
       </ul>
       <h4>⏰ Schedule:</h4>
       <p>📅 October 23, 2025<br/>🕐 1:30 PM - 4:00 PM<br/>📍VNR VJIET</p><br/>
