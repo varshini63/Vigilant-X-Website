@@ -18,7 +18,7 @@ const Events = ({ onShowEventDetails }) => {
           <h3 className="event-title">Flag-X CTF (Capture the flag)</h3>
           <p className="event-time">10:00 AM - 4:30 PM</p>
           <p className="event-prize">Prize Pool Upto ₹4,000</p>
-          <p className="event-description">Brain-teasing logic puzzles, mathematical challenges, and creative problem-solving riddles</p>
+          <p className="event-description">A hands-on cybersecurity competition where participants solve hacking challenges to uncover hidden flags</p>
           <button className="event-register">Register</button>
         </div>
         <div className="event-card" onClick={() => onShowEventDetails('seminar-docker')}>
@@ -34,7 +34,7 @@ const Events = ({ onShowEventDetails }) => {
           <h3 className="event-title">Idea Presentation</h3>
           <p className="event-time">1:30 PM - 3:30 PM</p>
           <p className="event-prize">Prize Pool: ₹1,500</p>
-          <p className="event-description">Present your innovative research on cutting-edge cybersecurity topics and emerging threats</p>
+          <p className="event-description">Present your innovative research on cutting-edge technologies of any domain</p>
           <button className="event-register">Register</button>
         </div>
 
@@ -43,7 +43,7 @@ const Events = ({ onShowEventDetails }) => {
           <h3 className="event-title">Cyber Coding  Contest</h3>
           <p className="event-time">1:30 PM - 4:30 PM</p>
           <p className="event-prize">Prize Pool: ₹3,000</p>
-          <p className="event-description">Identify and fix critical bugs in security-sensitive code with time-pressure challenges</p>
+          <p className="event-description">Challenges participants with coding, debugging, and bug-fix problems that simulate real-world security and programming scenarios.</p>
           <button className="event-register">Register</button>
         </div>
         
@@ -62,7 +62,7 @@ const Events = ({ onShowEventDetails }) => {
           <h3 className="event-title">Game of Threats</h3>
           <p className="event-time">10:00 AM - 3:00 PM</p>
           <p className="event-prize">Prize Pool: ₹1,500</p>
-          <p className="event-description">Strategic cybersecurity simulation game with real-world threat scenarios and defense strategies</p>
+          <p className="event-description">An interactive cybersecurity quiz series that blends fun and learning through puzzles — all under time pressure to test your quick thinking and cyber knowledge!</p>
           <button className="event-register">Register</button>
         </div>
 
@@ -71,7 +71,7 @@ const Events = ({ onShowEventDetails }) => {
           <h3 className="event-title">Cyber Hunt</h3>
           <p className="event-time">1:30 PM - 4:00 PM</p>
           <p className="event-prize">Prize Pool: ₹1,500</p>
-          <p className="event-description">Digital treasure hunt with cryptographic puzzles, OSINT challenges, and cybersecurity clues</p>
+          <p className="event-description">Treasure hunt with cryptographic puzzles, OSINT challenges, and cybersecurity clues</p>
           <button className="event-register">Register</button>
         </div>
         

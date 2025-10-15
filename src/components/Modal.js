@@ -129,8 +129,8 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
     'cyber-hunt': {
       title: '🕵️ Cyber Hunt Challenge',
       image: './images/cyber-hunt.jpg',
-      hasRegistration: false,
-      comingSoon: true,
+      hasRegistration: true,
+      registrationUrl: 'https://forms.gle/ZppFELgyLMsczfi49',
       details: `
       <h4>🎯 Hunt Categories:</h4>
       <ul style="text-align: left; margin: 20px 0;">
@@ -141,12 +141,12 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       <li>🗺️ Virtual Treasure Hunt</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 October 24, 2025<br/>🕐 2:00 PM - 4:30 PM<br/>📍 Computer Lab, VNR VJIET</p>
+      <p>📅 October 23, 2025<br/>🕐 1:30 PM - 4:00 PM<br/>📍VNR VJIET</p><br/>
       <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹2,500<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹1,500<br/>🥈 2nd Prize: ₹1,000</p>
+      <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500</p><br/>
       <h4>👥 Student Coordinators:</h4>
-      <p>🎯 Pratham - 9381665353<br/>🎯 Chandu - 7036541434</p>`,
-      description: 'Embark on a digital treasure hunt with cryptographic puzzles, OSINT challenges, and cybersecurity clues scattered across the digital realm.'
+      <p>🎯 Prathamesh - 9381665353<br/>🎯 Chandu - 7036541434</p>`,
+      description: 'Embark on a treasure hunt with cryptographic puzzles, OSINT challenges, and cybersecurity clues scattered across the digital realm.'
     },
     'workshop': {
       title: '🔗 Block Chain Technology Workshop',
@@ -171,24 +171,23 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
     'game-of-threats': {
       title: '⚔️ Game of Threats',
       image: './images/game-of-threats.jpg',
-      hasRegistration: false,
-      comingSoon: true,
+      hasRegistration: true,
+      registrationUrl: 'https://forms.gle/w6N8Aefat3P7puJMA',
       details: `
-      <h4>🎮 Game Mechanics:</h4>
+      <h4>📚 Instructions:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🛡️ Defense Strategy Planning</li>
-      <li>⚔️ Attack Simulation Scenarios</li>
-      <li>🔄 Real-time Decision Making</li>
-      <li>👥 Team Collaboration</li>
-      <li>📊 Risk Assessment Challenges</li>
+      <li>Individuals Only. No teams.</li>
+      <li>🪪Bring your student ID card</li>
+      <li>💻Laptops will be provided </li>
+      <li>⏳Stay alert & manage your time wisely</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 October 25, 2025<br/>🕙 10:00 AM - 3:00 PM<br/>📍 Gaming Arena, VNR VJIET</p>
+      <p>📅 October 23, 2025<br/>🕙 10:00 AM - 3:00 PM<br/>📍VNR VJIET</p><br/>
       <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹2,500<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹1,500<br/>🥈 2nd Prize: ₹1,000</p>
+      <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500</p><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Sreshta - 9966713666<br/>🎯 Haarika - 6302764629<br/></p>`,
-      description: 'Strategic cybersecurity simulation game with real-world threat scenarios and defense strategies. Test your incident response skills.'
+      description: 'Test your logic, problem-solving & cyber intelligence in an exciting series of interactive rounds 🔐💥'
     },
     'debugging-contest': {
       title: '🐞 Cyber Coding Contest',
