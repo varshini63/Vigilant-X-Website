@@ -56,8 +56,9 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
     },
     'seminar-docker': {
       title: '🐳 Docker/Kubernetes Seminar',
-      hasRegistration: false,
-      comingSoon: false,
+      image: './images/seminar-docker.png',
+      hasRegistration: true,
+      registrationUrl: 'https://forms.gle/7Q2dxXd2ABXpFnmYA',
       details: `
       <h4>📚 Instructions:</h4>
       <ul style="text-align: left; margin: 20px 0;">
@@ -139,13 +140,21 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       <li>🌐 Web-based Clues</li>
       <li>📱 Digital Footprint Analysis</li>
       </ul>
+      <h4>🔐 Rules:</h4>
+      <ul style="text-align: left; margin: 20px 0;">
+      <li>👥 Team: 2–3 Members | Inter-college Teams Allowed ✅</li>
+      <li>No sharing of answers or hints 🚫</li>
+      <li>Bring your phone for scanning QR codes </li>
+      <li>Carry ID cards & stationery 🪪</li>
+      <li>• Organizer’s decision is final ⚖</li>
+      </ul>
       <h4>⏰ Schedule:</h4>
       <p>📅 October 23, 2025<br/>🕐 1:30 PM - 4:00 PM<br/>📍VNR VJIET</p><br/>
       <h4>🏆 Prize Pool:</h4>
       <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500</p><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Prathamesh - 9381665353<br/>🎯 Chandu - 7036541434</p>`,
-      description: 'Embark on a treasure hunt with cryptographic puzzles, OSINT challenges, and cybersecurity clues scattered across the digital realm.'
+      description: 'Embark on a thrilling cybersecurity treasure hunt! Decode clues, uncover hidden trails, and solve cyber riddles to reach the ultimate flag 🏁💻Test your analytical skills, logic, and cyber knowledge in a fun & competitive way! ⚡'
     },
     'workshop': {
       title: '🔗 Block Chain Technology Workshop',
@@ -202,6 +211,7 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       </ul>
       <h4>⚠ Rules:</h4>
       <ul style="text-align: left; margin: 20px 0;">
+      <li>Individuals Only. No teams.</li>
       <li>💻 Bring your own laptop & essentials</li>
       <li>🚫 Strict no plagiarism</li>
       <li>⚖ Judge's decision is final</li>
