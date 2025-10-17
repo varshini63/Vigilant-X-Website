@@ -42,6 +42,16 @@ function Sponsors() {
       name: 'BWF',
       logo: './images/bwf_logo_1.jpg',
       category: 'Silver'
+    },
+    {
+      name: 'Munchies',
+      logo: './images/munchies_logo.jpg',
+      category: 'Silver'
+    },
+    {
+      name: 'Sri Maruthi Goli Soda',
+      logo: './images/maruthi-logo.png',
+      category: 'Silver'
     }
   ];
 
@@ -49,7 +59,7 @@ function Sponsors() {
     <section id="sponsors" className="section sponsors-section" ref={sponsorsRef}>
       <h2 className="section-title">Our Sponsors</h2>
       
-      <div className="sponsors-container">
+      <div className="sponsors-container-vertical">
         <div className="sponsor-category">
           <h3 className="sponsor-category-title gold-title">Gold Sponsor</h3>
           <div className="sponsors-grid">
