@@ -138,7 +138,7 @@ const Modal = ({ show, onClose, type, eventType }) => {
       eventImages: [
         './images/bugbounty-event-1.jpg',
         './images/bugbounty-event-2.jpg',
-        './images/bugbounty-event-3.JPG'
+        './images/bugbounty-event-3.jpg'
       ],
       driveLink: 'https://drive.google.com/drive/folders/1EEGrYUBdnI07wYdYqn00X9Elz0CW8QBl'
     },
