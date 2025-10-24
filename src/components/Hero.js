@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Hero = ({ onRegisterClick }) => {
-  const [countdown, setCountdown] = useState({
-    days: '00',
-    hours: '00',
-    minutes: '00',
-    seconds: '00'
-  });
-
+const Hero = () => {
   const [terminalIndex, setTerminalIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState('');
   const [showCursor, setShowCursor] = useState(true);
@@ -15,51 +8,15 @@ const Hero = ({ onRegisterClick }) => {
   const [isTyping, setIsTyping] = useState(false);
 
   const terminalCommands = [
-    { q: "$ whoami", a: "root@vigilantx-2025" },
-    { q: "$ cat /etc/vigilantx/mission.txt", a: "🎯 Securing the digital frontier, one byte at a time.\n🔐 Training tomorrow's cybersecurity warriors today." },
-    { q: "$ ls -la /events/", a: "drwxr-xr-x CTF_Competition\ndrwxr-xr-x Bug_Bounty_Hunt\ndrwxr-xr-x Security_Workshops\ndrwxr-xr-x Cyber_Hunt_2025\ndrwxr-xr-x Game_of_Threats" },
-    { q: "$ nmap -sV vigilantx.vnrvjiet.in", a: "PORT     STATE    SERVICE     VERSION\n22/tcp   open     ssh         OpenSSH 8.2\n80/tcp   open     http        nginx 1.18\n443/tcp  open     https       nginx 1.18\n1337/tcp open     elite       VigilantX-Portal" },
-    { q: "$ echo $PRIZE_POOL", a: "💰 Total Prize Pool: ₹20,000+\n🏆 Biggest cyber event in the region!" },
-    { q: "$ date && uptime", a: "📅 October 17, 2025 | National Cyber Security Awareness Month\n⚡ System uptime: 365 days of vigilance" },
-    { q: "$ ps aux | grep security", a: "vigilant  1337  0.1  cybersec  /usr/bin/defend-the-realm\ngaruda    2025  0.2  ethical   /opt/hack-for-good\nguardian  3000  0.3  monitor   /bin/watch-threats" },
-    { q: "$ cat /proc/cpuinfo | grep 'model name'", a: "model name: VJ Garuda Vigilance Cyber Processor v2025\nFeatures: ethical_hacking penetration_testing ctf_mastery" }
+    { q: "$ cat /var/log/vigilantx/status.txt", a: "✅ EVENT STATUS: SUCCESSFULLY CONCLUDED\n🎉 VigilantX 2025 was a grand success!" },
+    { q: "$ grep -i 'participants' event_stats.log", a: "👥 Total Participants: 200+\n🌟 Amazing turnout from across the region!" },
+    { q: "$ cat /achievements/winners.txt", a: "🏆 Winners crowned across all competitions\n💰 Prize Pool of ₹20,000+ distributed\n🎯 CTF, Bug Bounty, and seminars completed" },
+    { q: "$ tail -f /feedback/testimonials.log", a: "💬 'Best cybersecurity event I've attended!'\n⭐ 'Amazing learning experience'\n🔥 'Can't wait for VigilantX 2026!'" },
+    { q: "$ ls -la /events/completed/", a: "✓ CTF_Competition [CONCLUDED]\n✓ Bug_Bounty_Hunt [CONCLUDED]\n✓ Security_Workshops [CONCLUDED]\n✓ Cyber_Hunt_2025 [CONCLUDED]\n✓ Game_of_Threats [CONCLUDED]" },
+    { q: "$ echo $EVENT_HIGHLIGHTS", a: "🎤 Expert sessions from industry leaders\n🤝 Networking opportunities galore\n📚 Hands-on learning workshops\n⚡ Intense competition & collaboration" },
+    { q: "$ cat /gratitude/thankyou.txt", a: "🙏 Thanks to all participants, sponsors & volunteers\n💙 Your support made VigilantX 2025 unforgettable\n🚀 See you at VigilantX 2026!" },
+    { q: "$ date && uptime", a: "📅 October 23, 2025 | Event Successfully Concluded\n✨ Two days of cybersecurity excellence completed!" }
   ];
-
-  useEffect(() => {
-    const targetDate = new Date('2025-10-22T09:30:00').getTime();
-
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const timeLeft = targetDate - now;
-
-      if (timeLeft > 0) {
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        setCountdown({
-          days: String(days).padStart(2, '0'),
-          hours: String(hours).padStart(2, '0'),
-          minutes: String(minutes).padStart(2, '0'),
-          seconds: String(seconds).padStart(2, '0')
-        });
-      } else {
-        setCountdown({
-          days: '00',
-          hours: '00',
-          minutes: '00',
-          seconds: '00'
-        });
-      }
-    };
-
-    updateCountdown();
-
-    const countdownInterval = setInterval(updateCountdown, 1000);
-
-    return () => clearInterval(countdownInterval);
-  }, []);
 
   useEffect(() => {
     const typeCommand = () => {
@@ -80,7 +37,7 @@ const Hero = ({ onRegisterClick }) => {
             setShowAnswer(true);
             setTimeout(() => {
               setTerminalIndex((prev) => (prev + 1) % terminalCommands.length);
-            }, 3000);
+            }, 3500);
           }, 1000);
         }
       }, 100);
@@ -106,32 +63,19 @@ const Hero = ({ onRegisterClick }) => {
         </div>
         <h1 className="glitch-title">VigilantX 2025</h1>
       </div>
-      <div className="hero-top-section">
-        <div className="countdown-container">
-          <div className="countdown-timer">
-            <div className="countdown-unit">
-              <span className="countdown-number">{countdown.days}</span>
-              <span className="countdown-label">Days</span>
-            </div>
-            <div className="countdown-separator">:</div>
-            <div className="countdown-unit">
-              <span className="countdown-number">{countdown.hours}</span>
-              <span className="countdown-label">Hours</span>
-            </div>
-            <div className="countdown-separator">:</div>
-            <div className="countdown-unit">
-              <span className="countdown-number">{countdown.minutes}</span>
-              <span className="countdown-label">Minutes</span>
-            </div>
-            <div className="countdown-separator">:</div>
-            <div className="countdown-unit">
-              <span className="countdown-number">{countdown.seconds}</span>
-              <span className="countdown-label">Seconds</span>
-            </div>
-          </div>
+      
+      {/* Success Banner */}
+      <div className="success-banner">
+        <div className="success-content">
+          <span className="success-icon">🎉</span>
+          <h2 className="success-title">EVENT SUCCESSFULLY CONCLUDED!</h2>
+          <span className="success-icon">🎉</span>
         </div>
+        <p className="success-subtitle">Thank you for making VigilantX 2025 a grand success!</p>
       </div>
-      <p className="event-date">🗓️ Events Start on October 22nd, 2025</p>
+
+      <p className="event-date">✨ Held on October 22-23, 2025 | A Memorable Experience ✨</p>
+      
       <div className="hero-content">
         <div className="terminal">
           <div className="terminal-header">
@@ -160,14 +104,20 @@ const Hero = ({ onRegisterClick }) => {
             )}
           </div>
         </div>
+        
         <div className="center-button">
-          <button className="cta-button" onClick={onRegisterClick}>REGISTER FOR PASS</button>
+          <button className="cta-button gallery-button" onClick={() => {
+            const gallerySection = document.getElementById('gallery');
+            if (gallerySection) {
+              gallerySection.scrollIntoView({ behavior: 'smooth' });
+            }
+          }}>VIEW GALLERY</button>
           <button className="cta-button events-button" onClick={() => {
             const eventsSection = document.getElementById('events');
             if (eventsSection) {
               eventsSection.scrollIntoView({ behavior: 'smooth' });
             }
-          }}>REGISTER FOR EVENTS</button>
+          }}>EVENT HIGHLIGHTS</button>
         </div>
         
         <div className="hero-image">
@@ -179,4 +129,5 @@ const Hero = ({ onRegisterClick }) => {
     </section>
   );
 };
+
 export default Hero;

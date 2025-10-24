@@ -52,6 +52,7 @@ function App() {
       <Coordinators />
       <Contact />
       <Sponsors />
+      <Gallery />
       <Footer />
       
       <Modal

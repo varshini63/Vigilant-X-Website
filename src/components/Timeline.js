@@ -90,8 +90,8 @@ const Timeline = () => {
         <div className="timeline-item" style={{animationDelay: '0.8s'}}>
           <div className="timeline-dot"></div>
           <div className="timeline-content">
-            <h3 style={{color: '#0ff', marginBottom: '15px'}}>DAY 3 - Valedictory and Prize Distribution</h3>
-            <p style={{color: '#f0f', fontWeight: 'bold'}}>October 24, 2025 | 10:00 AM - 12:00 PM</p>
+            <h3 style={{color: '#0ff', marginBottom: '15px'}}>DAY 2 - Valedictory and Prize Distribution</h3>
+            <p style={{color: '#f0f', fontWeight: 'bold'}}>October 23, 2025 | 4:00 PM - 4:30 PM</p>
             <p>The event will conclude with the Valedictory and Prize Distribution ceremony, recognizing outstanding talent and participation.</p>
           </div>
         </div>

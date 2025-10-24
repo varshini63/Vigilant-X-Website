@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Navbar = ({ onRegisterClick }) => {
+const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     const toggleMobileMenu = () => {
@@ -20,14 +20,6 @@ const Navbar = ({ onRegisterClick }) => {
         const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
-    const handleRegisterClick = (e) => {
-        e.preventDefault();
-        closeMobileMenu();
-        if (onRegisterClick) {
-            onRegisterClick();
         }
     };
 
@@ -85,9 +77,9 @@ const Navbar = ({ onRegisterClick }) => {
                 <li><a href="#about" onClick={(e) => handleLinkClick(e, 'about')}>About</a></li>
                 <li><a href="#timeline" onClick={(e) => handleLinkClick(e, 'timeline')}>Timeline</a></li>
                 <li><a href="#events" onClick={(e) => handleLinkClick(e, 'events')}>Events</a></li>
+                <li><a href="#gallery" onClick={(e) => handleLinkClick(e, 'gallery')}>Gallery</a></li>
                 <li><a href="#coordinators" onClick={(e) => handleLinkClick(e, 'coordinators')}>Team</a></li>
                 <li><a href="#queries" onClick={(e) => handleLinkClick(e, 'queries')}>Contact</a></li>
-                <li><a href="#" onClick={handleRegisterClick} className="register-nav-btn">Register</a></li>
             </ul>
         </nav>
     );

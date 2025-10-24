@@ -1,34 +1,44 @@
 import React from 'react';
 
-const Modal = ({ show, onClose, type, eventType, onRegister }) => {
+const Modal = ({ show, onClose, type, eventType }) => {
   const eventDetails = {
     'opening': {
       type: 'details',
       title: 'Inauguration Ceremony',
-      time: '9:30 AM - 10:30 AM',
-      details: 'Join us for the grand opening of VigilantX 2025! Experience keynote speeches from industry leaders, live demonstrations of cutting-edge cybersecurity tools, and the official launch of our three-day cybersecurity festival.',
-      rules: [
-        'Open to all participants',
-        'Network with industry experts',
-        'Get your event schedule and materials'
-      ]
+      time: '9:30 AM - 10:00 AM',
+      details: 'The grand opening of VigilantX 2025 featured keynote speeches from industry leaders, live demonstrations of cutting-edge cybersecurity tools, and the official launch of our three-day cybersecurity festival.',
+      highlights: [
+        'Inspiring keynote speeches from Faculty',
+        'Official event launch ceremony'
+      ],
+      images: [
+        './images/inauguration-1.jpg',
+        './images/inauguration-2.jpg',
+        './images/inauguration-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/1N4lnOEHblqjZhZGNOOMmhCxwX7dbD43d'
     },
     'valedictory': {
       type: 'details',
       title: 'Valedictory & Prize Distribution',
-      time: '2:00 PM - 3:30 PM',
-      details: 'The grand finale of VigilantX 2025! Join us for the prize distribution ceremony, recognition of outstanding participants, and celebration of all achievements throughout the event.',
-      rules: [
-        'All participants must attend',
-        'Winners will be announced',
-        'Certificate distribution'
-      ]
+      time: '4:00 PM - 5:00 PM',
+      details: 'The grand finale of VigilantX 2025! Prize distribution ceremony, recognition of outstanding participants, and celebration of all achievements throughout the event.',
+      highlights: [
+        'Prize distribution to all winners',
+        'Recognition of outstanding participants',
+        'Certificate distribution ceremony',
+        'Celebration of achievements'
+      ],
+      images: [
+        './images/valedictory-1.jpg',
+        './images/valedictory-2.jpg',
+        './images/valedictory-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/1HoYmAxAwGbdyIYOdLbW7Zze2er936dQ4'
     },
     'non-cyber-ctf': {
-      title: '🧩 Flag-X CTF ',
+      title: '🧩 Flag-X CTF',
       image: './images/non-cyber-ctf.png',
-      hasRegistration: true,
-      registrationUrl: 'https://forms.gle/dNX7HCj6HiFGSAFj7',
       details: `
       <h4>🎯 Challenge Categories:</h4>
       <ul style="text-align: left; margin: 20px 0;">
@@ -39,225 +49,206 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
       <li>🔧 Reverse Engineering</li>
       <li>🐛 Binary exploits</li>
       </ul>
-      <h4>🔐 Rules:</h4>
+      <h4>📋 Event Highlights:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>👥 Teams of 2–3 | Inter-college Teams Allowed</li>
-      <li>❌ No DoS / Brute Force / External Help</li>
-      <li>⚖ Organizer's decision is final</li>
+      <li>👥 Teams of 2–3 competed fiercely</li>
+      <li>⚡ Jeopardy-style format kept everyone engaged</li>
+      <li>🏆 Exciting leaderboard battles</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 October 22, 2025<br/>🕙 10:00 AM - 4:30 PM<br/>📍VNR VJIET Campus</p><br/>
-      <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool Upto ₹4,000<br/></p><br/>
+      <p>📅 October 22, 2025<br/>🕙 10:00 AM - 4:30 PM<br/>📍E 403, E 430, P 401 & 402</p><br/>
+      <h4>🏆 Prize Distribution:</h4>
+      <p>💰 Total Prize Pool: ₹4,000<br/>🥇 Winners announced and celebrated!</p><br/>
       
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Raghava - 9059494181<br/>🎯 Praneeth - 9550722677</p>`,
-      description: '⚡ Jeopardy-style format  | Climb the leaderboard & prove your hacking skills!'
+      description: '⚡ Intense Jeopardy-style CTF competition where teams climbed the leaderboard and proved their hacking skills!',
+      eventImages: [
+        './images/ctf-event-1.jpg',
+        './images/ctf-event-2.jpg',
+        './images/ctf-event-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/1VIUBbAMiH34wLK-Y4D0FjQXp0kAfg0BK'
     },
     'seminar-docker': {
       title: '🐳 Docker/Kubernetes Seminar',
       image: './images/seminar-docker.png',
-      hasRegistration: true,
-      registrationUrl: 'https://forms.gle/7Q2dxXd2ABXpFnmYA',
       details: `
-      <h4>📚 Instructions:</h4>
+      <h4>📚 Session Highlights:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>💻 Bring your laptop (if practical)</li>
-      <li>🪪 Carry your college ID card</li>
-      <li>🐳 Install Docker Desktop (if possible)</li>
-      <li>⏰ Be seated 10 mins before the seminar starts</li>
+      <li>💻 Hands-on containerization demos</li>
+      <li>🐳 Docker Desktop practical session</li>
+      <li>☸️ Kubernetes orchestration basics</li>
+      <li>🎓 Interactive Q&A</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 22 Oct 2025<br/>🕙 10:30 AM – 1:30 PM<br/>📍 College Auditorium</p><p>🌐 Mode: Offline (with Live Demo)<p/><br/>
+      <p>📅 22 Oct 2025<br/>🕙 10:30 AM – 12:30 PM<br/>📍 E 413</p><p>🌐 Mode: Offline with Live Demos<p/><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Yeshaswini - 9908613869<br/>🎯 Hemalatha - 9059623204<br/>🎯 Chandra Shekar - 8328202404</p>`,
-      description: 'Step into the world of containerization & orchestration with an exciting, beginner-friendly session! 🚀<br/>Whether you are new to DevOps or have some experience, this seminar will help you grasp the fundamentals in a simple, interactive way '
+      description: 'An exciting, beginner-friendly session on containerization & orchestration! Participants learned DevOps fundamentals in a simple, interactive way 🚀',
+      eventImages: [
+        './images/docker-event-1.jpg',
+        './images/docker-event-2.jpg',
+        './images/docker-event-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/1AeLaEo2MVEXZ-lfecXqsQNekO7l49H6l'
     },
     'paper-presentation': {
       title: '📝 Idea Presentation',
       image: './images/paper-presentation.png',
-      hasRegistration: true,
-      registrationUrl: 'https://forms.gle/121g5busnEoydJ5w5',
       details: `
-      <h4>📚 Presentation Topics:</h4>
+      <h4>📚 Presentation Success:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🤖 Any domain of your choice</li>
-      </ul>
-      <h4>🔐 Rules:</h4>
-      <ul style="text-align: left; margin: 20px 0;">
-      <li>Teams of up to 3 members. Inter-college teams are welcome! 👥</li>
-      <li>Bring your PPT/PDF & laptop if needed 💻</li>
-      <li>5–7 mins presentation + Q&A 🗣</li>
-      <li>Original ideas only — no plagiarism 🚫</li>
-      <li>Judges' decision is final ⚖</li>
+      <li>🤖 Innovative ideas across multiple domains</li>
+      <li>👥 Brilliant team presentations</li>
+      <li>🎤 Engaging Q&A sessions</li>
+      <li>⚖ Expert judges evaluation</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 22 Oct 2025<br/>🕐 10:00 AM – 1:00 PM<br/>📍VNR VJIET</p><br/>
-      <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500<br/></p><br/>
+      <p>📅 22 Oct 2025<br/>🕐 1:30 PM – 3:30 PM<br/>📍E 526</p><br/>
+      <h4>🏆 Prize Distribution:</h4>
+      <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners: 2 Teams<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500<br/></p><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Vaishnavi - 9108134359<br/>🎯 Chakri - 7671097946</p>`,
-      description: 'Showcase your creativity, innovation & problem-solving skills! Form your team, present impactful ideas, and impress the judges to win exciting prizes 🏆'
+      description: 'Teams showcased their creativity, innovation & problem-solving skills! Impactful ideas impressed the judges and winners took home exciting prizes 🏆',
+      eventImages: [
+        './images/paper-event-1.jpg',
+        './images/paper-event-2.jpg',
+        './images/paper-event-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/1Xv_xz1QeuwyCDB2k7c5welQ0z7kDGR9B'
     },
     'bug-bounty': {
       title: '🐛 Bug Bounty',
       image: './images/bug-bounty.jpg',
-      hasRegistration: true,
-      registrationUrl: 'https://forms.gle/d2yYRPP8Eh3SkyXt6',
       details: `
-      <h4>🎯 Target Applications:</h4>
+      <h4>🎯 Competition Highlights:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🔸Web Exploitation</li>
-      <li>🔸Penetration Testing</li>
-      <li>🔸Proof-of-Concept Reporting</li>
-      </ul>
-      <h4>🔐 Rules:</h4>
-      <ul style="text-align: left; margin: 20px 0;">
-      <li>Teams of 2–3 | Inter-college Teams Allowed 👥</li>
-      <li>Only provided targets are in-scope ✅</li>
-      <li>No attacks on external infrastructure ❌</li>
-      <li>Quality findings and early submissions score higher 🧩</li>
-      <li>Organizer's decision is final ⚖</li>
+      <li>🔸 Web Exploitation challenges</li>
+      <li>🔸 Penetration Testing scenarios</li>
+      <li>🏆 Quality findings rewarded</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 23 Oct 2025<br/>🕙 10:00 AM - 12:30 PM<br/>📍 Cyber Lab, VNR VJIET</p><br/>
-      <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p><br/>
+      <p>📅 23 Oct 2025<br/>🕙 10:00 AM - 12:30 PM<br/>📍 E 417, E 430</p><br/>
+      <h4>🏆 Prize Distribution:</h4>
+      <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners: 2 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Sushanth - 8919652145<br/>🎯 Lalith - 8500283828</p>`,
-      description: 'Step into the world of ethical hacking and prove your offensive security skills!Hunt for real vulnerabilities, report them, and earn bounties across severity tiers.'
+      description: 'Ethical hackers proved their offensive security skills! Real vulnerabilities were discovered, reported, and bounties earned across severity tiers.',
+      eventImages: [
+        './images/bugbounty-event-1.jpg',
+        './images/bugbounty-event-2.jpg',
+        './images/bugbounty-event-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/1EEGrYUBdnI07wYdYqn00X9Elz0CW8QBl'
     },
     'cyber-hunt': {
       title: '🕵️ Cyber Hunt Challenge',
       image: './images/cyber-hunt.png',
-      hasRegistration: true,
-      registrationUrl: 'https://forms.gle/ZppFELgyLMsczfi49',
       details: `
-      <h4>🎯 Hunt Categories:</h4>
+      <h4>🎯 Hunt Success:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🔍 OSINT (Open Source Intelligence)</li>
-      <li>🔐 Cryptographic Puzzles</li>
-      <li>🌐 Web-based Clues</li>
-      <li>📱 Digital Footprint Analysis</li>
-      </ul>
-      <h4>🔐 Rules:</h4>
-      <ul style="text-align: left; margin: 20px 0;">
-      <li>👥 Team: 2–3 Members | Inter-college Teams Allowed ✅</li>
-      <li>No sharing of answers or hints 🚫</li>
-      <li>Bring your phone for scanning QR codes </li>
-      <li>Carry ID cards & stationery 🪪</li>
-      <li>• Organizer’s decision is final ⚖</li>
+      <li>🔍 OSINT challenges solved</li>
+      <li>🔐 Cryptographic puzzles decoded</li>
+      <li>🌐 Web-based clues uncovered</li>
+      <li>📱 Digital footprints analyzed</li>
       </ul>
       <h4>⏰ Schedule:</h4>
       <p>📅 October 23, 2025<br/>🕐 1:30 PM - 4:00 PM<br/>📍VNR VJIET</p><br/>
-      <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500</p><br/>
+      <h4>🏆 Prize Distribution:</h4>
+      <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners: 2 Teams<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500</p><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Prathamesh - 9381665353<br/>🎯 Chandu - 7036541434</p>`,
-      description: 'Embark on a thrilling cybersecurity treasure hunt! Decode clues, uncover hidden trails, and solve cyber riddles to reach the ultimate flag 🏁💻Test your analytical skills, logic, and cyber knowledge in a fun & competitive way! ⚡'
+      description: 'A thrilling cybersecurity treasure hunt! Teams decoded clues, uncovered hidden trails, and solved cyber riddles to reach the ultimate flag 🏁💻',
+      eventImages: [
+        './images/cyberhunt-event-1.jpg',
+        './images/cyberhunt-event-2.jpg',
+        './images/cyberhunt-event-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/1GNQwAHiXv2gJ1AImY2cPLht_GBW3dDpO'
     },
     'workshop': {
       title: '🔗 Block Chain Technology Workshop',
       image: './images/workshop.jpg',
-      hasRegistration: false,
-      comingSoon: true,
       details: `
-      <h4>📚 Workshop Modules:</h4>
+      <h4>📚 Workshop Success:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🔗 Blockchain fundamentals and security</li>
-      <li>🐳 Docker container security</li>
-      <li>☸️ Kubernetes security best practices</li>
-      <li>🔒 Smart contract auditing</li>
-      <li>🛠️ Practical lab sessions</li>
+      <li>🔗 Blockchain fundamentals mastered</li>
+      <li>🐳 Docker container security learned</li>
+      <li>☸️ Kubernetes security implemented</li>
+      <li>🔒 Smart contract auditing practiced</li>
+      <li>🛠️ Hands-on lab sessions completed</li>
       </ul>
       <h4>⏰ Schedule:</h4>
       <p>📅 October 25, 2025<br/>🕘 9:30 AM - 12:30 PM<br/>📍 Workshop Hall, VNR VJIET</p>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Yeshaswini - 9908613869<br/>🎯 Hemalatha - 9059623204<br/>🎯 Chandra Shekar - 8328202404</p>`,
-      description: 'Comprehensive hands-on blockchain security and containerization workshop with expert guidance. Learn cutting-edge technologies and security practices.'
+      description: 'Comprehensive hands-on blockchain security and containerization workshop with expert guidance. Participants learned cutting-edge technologies and security practices.',
+      eventImages: [
+        './images/workshop-event-1.jpg',
+        './images/workshop-event-2.jpg',
+        './images/workshop-event-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/YOUR_WORKSHOP_FOLDER_ID'
     },
     'game-of-threats': {
       title: '⚔️ Game of Threats',
       image: './images/game-of-threats.jpg',
-      hasRegistration: true,
-      registrationUrl: 'https://forms.gle/w6N8Aefat3P7puJMA',
       details: `
-      <h4>📚 Instructions:</h4>
+      <h4>🎮 Game Highlights:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>Individuals Only. No teams.</li>
-      <li>🪪Bring your student ID card</li>
-      <li>💻Laptops will be provided </li>
-      <li>⏳Stay alert & manage your time wisely</li>
+      <li>🧠 Logic and problem-solving challenges</li>
+      <li>🔐 Cyber intelligence tests</li>
+      <li>⚡ Interactive competitive rounds</li>
+      <li>🏆 Individual competition format</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 October 23, 2025<br/>🕙 10:00 AM - 3:00 PM<br/>📍VNR VJIET</p><br/>
-      <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500</p><br/>
+      <p>📅 October 23, 2025<br/>🕙 10:00 AM - 3:00 PM<br/>📍E 313</p><br/>
+      <h4>🏆 Prize Distribution:</h4>
+      <p>💰 Total Prize Pool: ₹1,500<br/>👥 Winners: 2 Participants<br/>🥇 1st Prize: ₹1,000<br/>🥈 2nd Prize: ₹500</p><br/>
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Sreshta - 9966713666<br/>🎯 Haarika - 6302764629<br/></p>`,
-      description: 'Test your logic, problem-solving & cyber intelligence in an exciting series of interactive rounds 🔐💥'
+      description: 'Participants tested their logic, problem-solving & cyber intelligence in an exciting series of interactive rounds 🔐💥',
+      eventImages: [
+        './images/gameofthreats-event-1.jpg',
+        './images/gameofthreats-event-2.jpg',
+        './images/gameofthreats-event-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/1s_EwBwSktcAz2wdT8q8l_EWQrc3GTGjC'
     },
     'debugging-contest': {
       title: '🐞 Cyber Coding Contest',
       image: './images/debugging-contest.png',
-      hasRegistration: true,
-      registrationUrl: 'https://forms.gle/Kw8xbAWyByEXLz3f9',
       details: `
-      <h4>💻 Programming Languages:</h4>
+      <h4>💻 Contest Highlights:</h4>
       <ul style="text-align: left; margin: 20px 0;">
-      <li>🐍 Python</li>
-      <li>☕ Java</li>
-      <li>⚡ C/C++</li>
-      </ul>
-      <h4>⚠ Rules:</h4>
-      <ul style="text-align: left; margin: 20px 0;">
-      <li>Individuals Only. No teams.</li>
-      <li>💻 Bring your own laptop & essentials</li>
-      <li>🚫 Strict no plagiarism</li>
-      <li>⚖ Judge's decision is final</li>
+      <li>🐍 Python, ☕ Java, ⚡ C/C++ challenges</li>
+      <li>🧩 Algorithmic puzzles solved</li>
+      <li>🐛 Tricky code debugged</li>
+      <li>🏆 Individual competition format</li>
       </ul>
       <h4>⏰ Schedule:</h4>
-      <p>📅 October 22, 2025<br/>🕙 1:30 PM - 04:30 PM<br/>📍VNR VJIET</p><br/>
-      <h4>🏆 Prize Pool:</h4>
-      <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners - 2 Teams<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p><br/>
+      <p>📅 October 22, 2025<br/>🕙 1:30 PM - 04:30 PM<br/>📍E 330, E 331</p><br/>
+      <h4>🏆 Prize Distribution:</h4>
+      <p>💰 Total Prize Pool: ₹3,000<br/>👥 Winners: 2 Participants<br/>🥇 1st Prize: ₹2,000<br/>🥈 2nd Prize: ₹1,000<br/></p><br/>
       
       <h4>👥 Student Coordinators:</h4>
       <p>🎯 Tilak - 9182567516<br/>🎯 Akshith - 9603839570</p>`,
-      description: '🔸 Solve coding problems, debug tricky code & crack algorithmic puzzles of all levels!'
+      description: '🔸 Coders solved challenging problems, debugged tricky code & cracked algorithmic puzzles of all levels!',
+      eventImages: [
+        './images/coding-event-1.jpg',
+        './images/coding-event-2.jpg',
+        './images/coding-event-3.jpg'
+      ],
+      driveLink: 'https://drive.google.com/drive/folders/1YGqq5jxJEshs65SK1PBVulIVOsN4TDzu'
     }
   };
 
-  const handleEventRegistration = () => {
-    if (eventType && eventDetails[eventType] && eventDetails[eventType].registrationUrl) {
-      window.open(eventDetails[eventType].registrationUrl, '_blank');
-    }
+  const handleDriveLinkClick = (driveLink) => {
+    window.open(driveLink, '_blank');
   };
 
   if (!show) return null;
-
-  if (type === 'registration') {
-    return (
-      <div className="modal" style={{ display: 'flex' }}>
-        <div className="modal-content">
-          <button className="close-btn" onClick={onClose}>&times;</button>
-          <h2 style={{ color: '#0ff', marginBottom: '20px' }}>🎯 Complete Registration</h2>
-          <p style={{ marginBottom: '30px' }}>Scan the QR code to complete payment and secure your spot!</p>
-          <div className="qr-container">
-            <div style={{ width: '200px', height: '200px', background: '#000', color: '#0ff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px', textAlign: 'center' }}>
-              QR CODE<br />PAYMENT<br />GATEWAY
-            </div>
-          </div>
-          <div className="payment-info">
-            <p style={{ color: '#f0f', fontSize: '1.2rem', marginBottom: '10px' }}>💰 Registration Fees:</p>
-            <p className="price">🎓 VNR Students: ₹100</p>
-            <p className="price">🏫 Other Colleges: ₹150</p>
-            <p style={{ marginTop: '15px', color: '#0ff', fontSize: '0.9rem' }}>* Includes access to all events, workshops, and refreshments</p>
-          </div>
-          <button onClick={onClose} className="cta-button">CLOSE</button>
-        </div>
-      </div>
-    );
-  }
 
   if (type === 'event' && eventType && eventDetails[eventType]) {
     const event = eventDetails[eventType];
@@ -265,45 +256,59 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
     if (event.type === 'details') {
       return (
         <div className="modal" style={{ display: 'flex' }}>
-          <div className="modal-content">
+          <div className="modal-content event-concluded-modal">
             <button className="close-btn" onClick={onClose}>&times;</button>
             <h2 style={{ color: '#0ff', marginBottom: '20px' }}>{event.title}</h2>
+            <div className="event-concluded-badge">
+              ✅ EVENT SUCCESSFULLY CONCLUDED
+            </div>
             <div style={{ textAlign: 'left', color: '#ccc' }}>
               {event.details && <p style={{ marginBottom: '15px', lineHeight: '1.6' }}>{event.details}</p>}
-              {event.rules && (
+              {event.highlights && (
                 <>
-                  <h3 style={{ color: '#0ff', marginTop: '20px' }}>Rules & Guidelines:</h3>
+                  <h3 style={{ color: '#0ff', marginTop: '20px' }}>Event Highlights:</h3>
                   <ul style={{ marginLeft: '20px', lineHeight: '1.8' }}>
-                    {event.rules.map((rule, index) => (
-                      <li key={index}>{rule}</li>
+                    {event.highlights.map((highlight, index) => (
+                      <li key={index}>{highlight}</li>
                     ))}
                   </ul>
                 </>
               )}
             </div>
+            
+            {event.images && (
+              <div className="event-photo-gallery">
+                <h3 style={{ color: '#f0f', marginTop: '30px', marginBottom: '20px', textAlign: 'center' }}>
+                  📸 Event Moments
+                </h3>
+                <div className="event-photos-grid">
+                  {event.images.map((img, index) => (
+                    <div key={index} className="event-photo-card">
+                      <img src={img} alt={`${event.title} - ${index + 1}`} />
+                      <div className="photo-overlay">
+                        <span className="photo-number">#{index + 1}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {event.driveLink && (
+                  <div className="drive-link-container">
+                    <p className="drive-link-text">📷 Want to see more photos from this event?</p>
+                    <button 
+                      className="drive-link-button"
+                      onClick={() => handleDriveLinkClick(event.driveLink)}
+                    >
+                      <span className="drive-icon">📁</span>
+                      VIEW ALL PHOTOS ON GOOGLE DRIVE
+                      <span className="arrow-icon">→</span>
+                    </button>
+                  </div>
+                )}
+              </div>
+            )}
+            
             <button className="cta-button" onClick={onClose} style={{ marginTop: '30px' }}>CLOSE</button>
-          </div>
-        </div>
-      );
-    }
-
-    if (event.comingSoon) {
-      return (
-        <div className="modal" style={{ display: 'flex' }}>
-          <div className="modal-content">
-            <button className="close-btn" onClick={onClose}>&times;</button>
-            <div className="coming-soon-container">
-              <div className="coming-soon-icon">🚀</div>
-              <h2 className="coming-soon-title">{event.title}</h2>
-              <div className="coming-soon-message">
-                <p className="pulse-text">Registrations Opening Soon!</p>
-                <p className="sub-message">We're preparing something amazing for you.</p>
-                <p className="stay-tuned">Stay tuned for the registration link.</p>
-              </div>
-              <div className="countdown-badge">
-                <span className="badge-text">Get Ready</span>
-              </div>
-            </div>
           </div>
         </div>
       );
@@ -311,9 +316,13 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
 
     return (
       <div className="modal" style={{ display: 'flex' }}>
-        <div className="modal-content" style={{ maxWidth: '800px' }}>
+        <div className="modal-content event-concluded-modal" style={{ maxWidth: '900px' }}>
           <button className="close-btn" onClick={onClose}>&times;</button>
           <h2 style={{ color: '#0ff', marginBottom: '20px' }}>{event.title}</h2>
+          
+          <div className="event-concluded-badge">
+            ✅ EVENT SUCCESSFULLY CONCLUDED
+          </div>
           
           {event.image && (
             <div style={{ textAlign: 'center', margin: '20px 0' }}>
@@ -322,13 +331,43 @@ const Modal = ({ show, onClose, type, eventType, onRegister }) => {
           )}
           
           <div style={{ color: '#fff', lineHeight: '1.6' }} dangerouslySetInnerHTML={{ __html: event.details }} />
-          <h4 style={{ color: '#f0f', margin: '20px 0 10px 0' }}>📝 Event Description:</h4>
+          <h4 style={{ color: '#f0f', margin: '20px 0 10px 0' }}>📝 Event Summary:</h4>
           <p style={{ marginBottom: '20px' }} dangerouslySetInnerHTML={{ __html: event.description }} />
+          
+          {event.eventImages && (
+            <div className="event-photo-gallery">
+              <h3 style={{ color: '#f0f', marginTop: '30px', marginBottom: '20px', textAlign: 'center' }}>
+                📸 Event Moments
+              </h3>
+              <div className="event-photos-grid">
+                {event.eventImages.map((img, index) => (
+                  <div key={index} className="event-photo-card">
+                    <img src={img} alt={`${event.title} - ${index + 1}`} />
+                    <div className="photo-overlay">
+                      <span className="photo-number">#{index + 1}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              {event.driveLink && (
+                <div className="drive-link-container">
+                  <p className="drive-link-text">📷 Want to see more photos from this event?</p>
+                  <button 
+                    className="drive-link-button"
+                    onClick={() => handleDriveLinkClick(event.driveLink)}
+                  >
+                    <span className="drive-icon">📁</span>
+                    VIEW ALL PHOTOS ON GOOGLE DRIVE
+                    <span className="arrow-icon">→</span>
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+          
           <div style={{ textAlign: 'center', marginTop: '30px' }}>
-            {event.hasRegistration && (
-              <button className="cta-button" onClick={handleEventRegistration} style={{ marginTop: '20px' }}>REGISTER FOR EVENT</button>
-            )}
-            <button className="cta-button" onClick={onClose} style={{ marginLeft: '10px', background: 'linear-gradient(45deg, #666, #999)' }}>CLOSE</button>
+            <button className="cta-button" onClick={onClose} style={{ background: 'linear-gradient(45deg, #0ff, #f0f)' }}>CLOSE</button>
           </div>
         </div>
       </div>
